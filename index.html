@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pixel Academy ✿</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-icon">✿</span><div><strong>PIXEL ACADEMY</strong><small>little steps, big knowledge</small></div></div>
+      <div class="coin-pill" aria-label="Jumlah koin"><span>🪙</span><strong id="coin-count">0</strong></div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">✦ YOUR DAILY QUEST ✦</p>
+        <h1>Belajar sambil<br><span>berpetualang!</span></h1>
+        <p class="intro">Bantu Hoshi menyelesaikan kuis hari ini dan kumpulkan koin lucu.</p>
+        <div class="progress-wrap"><div class="progress-label"><span>QUEST PROGRESS</span><span id="progress-text">0 / 5</span></div><div class="progress-track"><div id="progress-bar"></div></div></div>
+      </div>
+      <div class="mascot-card" aria-label="Karakter Hoshi">
+        <div class="sparkle s1">✦</div><div class="sparkle s2">✧</div>
+        <div class="mascot">🌸</div>
+        <div class="character-name">HOSHI <span>♡</span></div>
+        <div class="speech">“Kita pasti bisa!”</div>
+      </div>
+    </section>
+
+    <section class="quiz-card" aria-live="polite">
+      <div class="quiz-heading"><div><span class="tag">ACADEMY QUIZ</span><h2 id="question-title">Pertanyaan 1</h2></div><span class="tiny-star">✦ ✧ ✦</span></div>
+      <p class="question" id="question-text">Memuat pertanyaan...</p>
+      <div class="answers" id="answers"></div>
+      <div class="feedback" id="feedback">Pilih jawabanmu untuk mendapatkan koin!</div>
+      <div class="quiz-footer"><span>🌷 Pelan-pelan, yang penting mencoba.</span><button id="next-button" class="next-button" disabled>Berikutnya →</button></div>
+    </section>
+
+    <footer>Made with ♡ for curious minds · Pixel Academy</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
